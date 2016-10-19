@@ -1,0 +1,26 @@
+<html>
+<head></head>
+<body>
+<script>
+
+var numberLine=prompt("please, enter the number of rows");
+var numberColumn=prompt("please,enter the number of columns");
+var result = "\n";
+
+for (var line = 1; line <= numberLine; line++) {
+  for (var column = 1; column <= numberColumn; column++) {
+    if (line%2==column%2) {
+      result=result+"#"
+    }
+    else {
+      result=result+" ";
+    }
+  }
+  result=result +"\n"
+  
+}
+alert(result);
+
+</script>
+</body>
+</html>
